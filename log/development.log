@@ -511,3 +511,476 @@ Net::SMTPFatalError (554 Sandbox subdomains are for test purposes only. Please a
   Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.6ms)
+
+
+Started GET "/" for 98.167.46.192 at 2017-10-26 21:12:02 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 355ms (Views: 346.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 98.167.46.192 at 2017-10-26 21:12:15 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (456.4ms)
+Completed 200 OK in 507ms (Views: 482.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 98.167.46.192 at 2017-10-26 21:12:23 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BV2ALLVYDWNRUGl4OnLECjxDolxjpRyMOYNi612NU5XeSf14OBwrqmKhppdnuJrvc0e3zDREOWXedayAMHs/cw==", "user"=>{"email"=>"skepts@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'skepts@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "skepts@gmail.com"], ["encrypted_password", "$2a$11$ZHOcnsp6jbrFduO7W5NULurZKNgGk20fS145AmhWPvcnBBuM8iGVW"], ["created_at", "2017-10-26 21:12:24.153911"], ["updated_at", "2017-10-26 21:12:24.153911"]]
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from send_admin_mail at /home/ubuntu/workspace/app/models/user.rb:10)
+  Rendered favorite_mailer/new_user.html.erb within layouts/mailer (0.8ms)
+
+FavoriteMailer#new_user: processed outbound mail in 162.6ms
+
+Sent mail to skepts@gmail.com (480.1ms)
+Date: Thu, 26 Oct 2017 21:12:24 +0000
+From: skepts@gmail.com
+To: skepts@gmail.com
+Message-ID: skepts@gmail.com
+In-Reply-To: skepts@gmail.com
+References: skepts@gmail.com
+Subject: Welcome to Blocmetrics!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+     <!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>Welcome to Blocmetrics skepts@gmail.com</h1>
+     <p>Want to know more stuff than anyone else? Us too.</p>
+
+     <p>
+       <a href="http://blocmetrics-rt.herokuapp.com//users/sign_in">Lets get this party started</a>
+     </p>
+   </body>
+ </html>
+  </body>
+</html>
+
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 825ms (ActiveRecord: 0.8ms)
+
+Net::SMTPFatalError (554 Sandbox subdomains are for test purposes only. Please add your own domain or add the address to authorized recipients in Account Settings.
+):
+  app/models/user.rb:10:in `send_admin_mail'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.2ms)
+
+
+Started POST "/users" for 98.167.46.192 at 2017-10-26 21:36:00 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dRJH/kDiTk/qJLqpw36weAphXknHLW83nnp6Jup/9CeuBjqqzaZohtnVdUaetO6dRWVL2ZDMSt55jLRNh4mYwQ==", "user"=>{"email"=>"skepts@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'skepts@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "skepts@gmail.com"], ["encrypted_password", "$2a$11$FwGmeYTMHZGkl2E3BX7PIuDNDHn.B8m2bVOdhHZL6jCY9bmQ/n9gy"], ["created_at", "2017-10-26 21:36:00.945068"], ["updated_at", "2017-10-26 21:36:00.945068"]]
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from send_admin_mail at /home/ubuntu/workspace/app/models/user.rb:10)
+  Rendered favorite_mailer/new_user.html.erb within layouts/mailer (0.3ms)
+
+FavoriteMailer#new_user: processed outbound mail in 10.6ms
+
+Sent mail to skepts@gmail.com (843.1ms)
+Date: Thu, 26 Oct 2017 21:36:00 +0000
+From: skepts@gmail.com
+To: skepts@gmail.com
+Message-ID: skepts@gmail.com
+In-Reply-To: skepts@gmail.com
+References: skepts@gmail.com
+Subject: Welcome to Blocmetrics!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+     <!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>Welcome to Blocmetrics skepts@gmail.com</h1>
+     <p>Want to know more stuff than anyone else? Us too.</p>
+
+     <p>
+       <a href="http://blocmetrics-rt.herokuapp.com//users/sign_in">Lets get this party started</a>
+     </p>
+   </body>
+ </html>
+  </body>
+</html>
+
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 1015ms (ActiveRecord: 1.7ms)
+
+Net::SMTPFatalError (554 Sandbox subdomains are for test purposes only. Please add your own domain or add the address to authorized recipients in Account Settings.
+):
+  app/models/user.rb:10:in `send_admin_mail'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (42.3ms)
+
+
+Started POST "/users" for 98.167.46.192 at 2017-10-26 21:36:50 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dRJH/kDiTk/qJLqpw36weAphXknHLW83nnp6Jup/9CeuBjqqzaZohtnVdUaetO6dRWVL2ZDMSt55jLRNh4mYwQ==", "user"=>{"email"=>"skepts@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'skepts@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "skepts@gmail.com"], ["encrypted_password", "$2a$11$/QrJaN1QOw7PYie6BzohLeYW/5XWv0X8izgKcqewVy69QJvnVzpGa"], ["created_at", "2017-10-26 21:36:51.071447"], ["updated_at", "2017-10-26 21:36:51.071447"]]
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from send_admin_mail at /home/ubuntu/workspace/app/models/user.rb:10)
+  Rendered favorite_mailer/new_user.html.erb within layouts/mailer (0.2ms)
+
+FavoriteMailer#new_user: processed outbound mail in 5.4ms
+
+Sent mail to skepts@gmail.com (465.3ms)
+Date: Thu, 26 Oct 2017 21:36:51 +0000
+From: skepts@gmail.com
+To: skepts@gmail.com
+Message-ID: skepts@gmail.com
+In-Reply-To: skepts@gmail.com
+References: skepts@gmail.com
+Subject: Welcome to Blocmetrics!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+     <!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>Welcome to Blocmetrics skepts@gmail.com</h1>
+     <p>Want to know more stuff than anyone else? Us too.</p>
+
+     <p>
+       <a href="http://blocmetrics-rt.herokuapp.com//users/sign_in">Lets get this party started</a>
+     </p>
+   </body>
+ </html>
+  </body>
+</html>
+
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 610ms (ActiveRecord: 0.9ms)
+
+Net::SMTPFatalError (554 Sandbox subdomains are for test purposes only. Please add your own domain or add the address to authorized recipients in Account Settings.
+):
+  app/models/user.rb:10:in `send_admin_mail'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.6ms)
+
+
+Started POST "/users" for 98.167.46.192 at 2017-10-26 21:43:14 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dRJH/kDiTk/qJLqpw36weAphXknHLW83nnp6Jup/9CeuBjqqzaZohtnVdUaetO6dRWVL2ZDMSt55jLRNh4mYwQ==", "user"=>{"email"=>"skepts@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'skepts@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "skepts@gmail.com"], ["encrypted_password", "$2a$11$U5UUyZSHnHSBmAwk39R26ui7uIDQ9DFhsYFVyKoFyKu.j9egF9d3G"], ["created_at", "2017-10-26 21:43:14.303281"], ["updated_at", "2017-10-26 21:43:14.303281"]]
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from send_admin_mail at /home/ubuntu/workspace/app/models/user.rb:10)
+  Rendered favorite_mailer/new_user.html.erb within layouts/mailer (0.3ms)
+
+FavoriteMailer#new_user: processed outbound mail in 6.6ms
+
+Sent mail to skepts@gmail.com (931.5ms)
+Date: Thu, 26 Oct 2017 21:43:14 +0000
+From: skepts@gmail.com
+To: skepts@gmail.com
+Message-ID: skepts@gmail.com
+In-Reply-To: skepts@gmail.com
+References: skepts@gmail.com
+Subject: Welcome to Blocmetrics!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+     <!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>Welcome to Blocmetrics skepts@gmail.com</h1>
+     <p>Want to know more stuff than anyone else? Us too.</p>
+
+     <p>
+       <a href="http://blocmetrics-rt.herokuapp.com//users/sign_in">Lets get this party started</a>
+     </p>
+   </body>
+ </html>
+  </body>
+</html>
+
+  [1m[36m (11.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2017-10-26 21:43:15.257518"], ["current_sign_in_at", "2017-10-26 21:43:15.257518"], ["last_sign_in_ip", "98.167.46.192"], ["current_sign_in_ip", "98.167.46.192"], ["sign_in_count", 1], ["updated_at", "2017-10-26 21:43:15.258788"], ["id", 1]]
+  [1m[35m (22.2ms)[0m  commit transaction
+Redirected to https://blocmetrics-rtrunkhill.c9users.io/
+Completed 302 Found in 1153ms (ActiveRecord: 34.6ms)
+
+
+Started GET "/" for 98.167.46.192 at 2017-10-26 21:43:15 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 51ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 98.167.46.192 at 2017-10-26 21:43:57 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to https://blocmetrics-rtrunkhill.c9users.io/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 98.167.46.192 at 2017-10-26 21:43:58 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 98.167.46.192 at 2017-10-26 21:44:00 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to https://blocmetrics-rtrunkhill.c9users.io/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 98.167.46.192 at 2017-10-26 21:44:00 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 98.167.46.192 at 2017-10-26 21:44:01 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to https://blocmetrics-rtrunkhill.c9users.io/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 98.167.46.192 at 2017-10-26 21:44:02 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 98.167.46.192 at 2017-10-26 21:44:05 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to https://blocmetrics-rtrunkhill.c9users.io/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 98.167.46.192 at 2017-10-26 21:44:05 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 98.167.46.192 at 2017-10-26 21:44:06 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to https://blocmetrics-rtrunkhill.c9users.io/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 98.167.46.192 at 2017-10-26 21:44:06 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 22ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 98.167.46.192 at 2017-10-26 21:44:07 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to https://blocmetrics-rtrunkhill.c9users.io/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 98.167.46.192 at 2017-10-26 21:44:07 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 98.167.46.192 at 2017-10-26 21:46:00 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 98.167.46.192 at 2017-10-26 21:46:26 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 28ms (Views: 27.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 98.167.46.192 at 2017-10-26 21:47:21 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 98.167.46.192 at 2017-10-26 21:48:09 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 27ms (Views: 26.8ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/sign_out" for 98.167.46.192 at 2017-10-26 21:48:44 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pvsbXczYwjXirfsbB89c2xvbl4F4cBiWL/26HiFAucV972YJQZzk/NFcNPRaBQI+VN+CES+RPX/IC3R1TLbVIw=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://blocmetrics-rtrunkhill.c9users.io/
+Completed 302 Found in 187ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 98.167.46.192 at 2017-10-26 21:48:45 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 40ms (Views: 38.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 98.167.46.192 at 2017-10-26 21:48:47 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 98.167.46.192 at 2017-10-26 21:48:56 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DeqJHRqg9EfUqIxVPWbh+CVaSygJ17H+hITAajxqct0xKGXd33xld/DYm3dAvzvfMvdmVjypHs+83SkR6Bbxiw==", "user"=>{"email"=>"skepts@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'skepts@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered devise/shared/_links.html.erb (0.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 166ms (Views: 24.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for 98.167.46.192 at 2017-10-26 21:49:23 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/F/slGRxX8Nnxo0rVlZSrDnvjrV9j/VKYBjufMgpetLAnQBUoa3O80O2mgkrj4iLLkKjy0jxWntYQQcHHFX5hA==", "user"=>{"email"=>"nobody@crap.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'nobody@crap.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "nobody@crap.com"], ["encrypted_password", "$2a$11$1mnnXgPNMvBstXErvqVzqOBtUm4CP7k8y5v9.ifURIhhoLnJEEe9e"], ["created_at", "2017-10-26 21:49:23.669381"], ["updated_at", "2017-10-26 21:49:23.669381"]]
+DEPRECATION WARNING: `#deliver` is deprecated and will be removed in Rails 5. Use `#deliver_now` to deliver immediately or `#deliver_later` to deliver through Active Job. (called from send_admin_mail at /home/ubuntu/workspace/app/models/user.rb:10)
+  Rendered favorite_mailer/new_user.html.erb within layouts/mailer (0.3ms)
+
+FavoriteMailer#new_user: processed outbound mail in 5.7ms
+
+Sent mail to nobody@crap.com (753.7ms)
+Date: Thu, 26 Oct 2017 21:49:23 +0000
+From: skepts@gmail.com
+To: nobody@crap.com
+Message-ID: nobody@crap.com
+In-Reply-To: nobody@crap.com
+References: nobody@crap.com
+Subject: Welcome to Blocmetrics!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+     <!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>Welcome to Blocmetrics nobody@crap.com</h1>
+     <p>Want to know more stuff than anyone else? Us too.</p>
+
+     <p>
+       <a href="http://blocmetrics-rt.herokuapp.com//users/sign_in">Lets get this party started</a>
+     </p>
+   </body>
+ </html>
+  </body>
+</html>
+
+  [1m[35m (0.2ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 898ms (ActiveRecord: 0.7ms)
+
+Net::SMTPFatalError (554 Sandbox subdomains are for test purposes only. Please add your own domain or add the address to authorized recipients in Account Settings.
+):
+  app/models/user.rb:10:in `send_admin_mail'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.4ms)

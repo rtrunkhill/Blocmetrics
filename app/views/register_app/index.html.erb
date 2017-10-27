@@ -1,0 +1,20 @@
+<h1>Registered Applications</h1>
+ <div class="col-md-4">
+ <%= link_to "Add an App", new_register_app_path, class: 'btn btn-xs btn-success' %>
+ </div>
+<br>
+<div class="row">
+ <div class="col-md-8">
+  <% @register_apps.each do |register_app| %>
+   <div class="media">
+    <div class="media-body">
+     <h4 class="media-heading">
+        <% if register_app.user_id == current_user.id %>
+             <li><%= link_to register_app.name, register_app %></li>
+        <% end %>
+     </h4>
+    </div>
+   </div>
+  <% end %>
+ </div>
+</div>

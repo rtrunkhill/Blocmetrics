@@ -9,4 +9,6 @@ class User < ActiveRecord::Base
   def send_admin_mail
     FavoriteMailer.new_user(self).deliver
   end
+  
+  has_many :register_apps
 end

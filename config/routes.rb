@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  resources :register_app
+
   devise_for :users, controllers: { sessions: 'users/sessions' }
   get 'users/signout', to: 'devise/sessions#destroy'
   

@@ -1,0 +1,12 @@
+<h1><%= @register_app.name %></h1>
+<div class="row">
+    <br>
+    <div class ="col-md-12">
+       <h4><%= @register_app.url %></h4> 
+    </div>
+    <br>
+</div>
+<div class="btn-group">
+    <%= link_to "Edit", edit_register_app_path, class: 'btn btn-xs btn-success' %>
+    <%= link_to "Delete", @register_app, method: :delete, class: 'btn btn-xs btn-danger', data: { confirm: 'What did this App ever do to you? Are you sure?' } %>
+</div>

@@ -10,5 +10,6 @@ class User < ActiveRecord::Base
   #   FavoriteMailer.new_user(self).deliver
   # end
   
-  has_many :register_apps
+  has_many :register_apps, dependent: :destroy
+  has_many :events, through: :register_apps
 end

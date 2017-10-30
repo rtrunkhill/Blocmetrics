@@ -4,11 +4,11 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
          
-  after_create :send_admin_mail
+  # after_create :send_admin_mail
   
-  def send_admin_mail
-    FavoriteMailer.new_user(self).deliver
-  end
+  # def send_admin_mail
+  #   FavoriteMailer.new_user(self).deliver
+  # end
   
   has_many :register_apps
 end

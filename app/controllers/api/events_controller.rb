@@ -9,6 +9,7 @@ class API::EventsController < ApplicationController
         headers['Access-Control-Allow-Headers'] = 'Content-Type'
     end
     
+    
     def create
         registered_application = RegisterApp.find_by(url: request.env['HTTP_ORIGIN'])
         if registered_application.nil?

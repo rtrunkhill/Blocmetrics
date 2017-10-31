@@ -6323,3 +6323,570 @@ Processing by API::EventsController#create as JSON
   Parameters: {"name"=>"foobar", "event"=>{"name"=>"foobar"}}
   [1m[36mRegisterApp Load (1.0ms)[0m  [1mSELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."url" = ? LIMIT 1[0m  [["url", "http://registered_application.com"]]
 Completed 422 Unprocessable Entity in 2ms (Views: 0.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/api/events" for 146.148.57.179 at 2017-10-30 21:25:06 +0000
+Cannot render console from 146.148.57.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by API::EventsController#create as JSON
+  Parameters: {"name"=>"foobar", "event"=>{"name"=>"foobar"}}
+  [1m[35mRegisterApp Load (0.1ms)[0m  SELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."url" = ? LIMIT 1  [["url", "http://registered_application.com"]]
+Completed 422 Unprocessable Entity in 5ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/events?access_token=TOKEN" for 146.148.57.179 at 2017-10-30 21:30:11 +0000
+Cannot render console from 146.148.57.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by API::EventsController#create as JSON
+  Parameters: {"name"=>"foobar", "access_token"=>"TOKEN", "event"=>{"name"=>"foobar"}}
+  [1m[36mRegisterApp Load (0.1ms)[0m  [1mSELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."url" = ? LIMIT 1[0m  [["url", "http://registered_application.com"]]
+Completed 422 Unprocessable Entity in 4ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/events" for 146.148.57.179 at 2017-10-30 21:30:22 +0000
+Cannot render console from 146.148.57.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by API::EventsController#create as JSON
+  Parameters: {"name"=>"foobar", "event"=>{"name"=>"foobar"}}
+  [1m[35mRegisterApp Load (0.1ms)[0m  SELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."url" = ? LIMIT 1  [["url", "http://registered_application.com"]]
+Completed 422 Unprocessable Entity in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/api/events" for 146.148.57.179 at 2017-10-31 03:34:14 +0000
+Cannot render console from 146.148.57.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by API::EventsController#create as JSON
+  Parameters: {"name"=>"foobar", "event"=>{"name"=>"foobar"}}
+  [1m[36mRegisterApp Load (0.2ms)[0m  [1mSELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."url" = ? LIMIT 1[0m  [["url", "http://registered_application.com"]]
+Completed 422 Unprocessable Entity in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/events" for 146.148.57.179 at 2017-10-31 03:36:33 +0000
+Cannot render console from 146.148.57.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by API::EventsController#create as JSON
+  Parameters: {"name"=>"foobar", "event"=>{"name"=>"foobar"}}
+  [1m[35mRegisterApp Load (0.1ms)[0m  SELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."url" = ? LIMIT 1  [["url", "http://registered_application.com"]]
+Completed 422 Unprocessable Entity in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 98.167.46.192 at 2017-10-31 03:54:29 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 403ms (Views: 393.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/events" for 146.148.57.179 at 2017-10-31 03:54:36 +0000
+Cannot render console from 146.148.57.179! Allowed networks: 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+Processing by API::EventsController#create as JSON
+  Parameters: {"name"=>"foobar", "event"=>{"name"=>"foobar"}}
+  [1m[36mRegisterApp Load (0.2ms)[0m  [1mSELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."url" = ? LIMIT 1[0m  [["url", "http://registered_application.com"]]
+Completed 422 Unprocessable Entity in 12ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/events" for 146.148.57.179 at 2017-10-31 03:55:32 +0000
+Cannot render console from 146.148.57.179! Allowed networks: 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+Processing by API::EventsController#create as JSON
+  Parameters: {"name"=>"foobar", "event"=>{"name"=>"foobar"}}
+  [1m[35mRegisterApp Load (0.1ms)[0m  SELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."url" = ? LIMIT 1  [["url", "http://registered_application.com"]]
+Completed 422 Unprocessable Entity in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 98.167.46.192 at 2017-10-31 16:19:07 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 371ms (Views: 358.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 98.167.46.192 at 2017-10-31 16:19:08 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+
+
+Started GET "/assets/api/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 98.167.46.192 at 2017-10-31 16:19:08 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+
+
+Started POST "/api/events" for 146.148.57.179 at 2017-10-31 16:19:42 +0000
+Cannot render console from 146.148.57.179! Allowed networks: 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+Processing by API::EventsController#create as JSON
+  Parameters: {"name"=>"foobar", "event"=>{"name"=>"foobar"}}
+  [1m[35mRegisterApp Load (0.3ms)[0m  SELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."url" = ? LIMIT 1  [["url", "http://registered_application.com"]]
+Completed 422 Unprocessable Entity in 20ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 98.167.46.192 at 2017-10-31 16:29:47 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 352ms (Views: 343.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 98.167.46.192 at 2017-10-31 16:29:49 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (644.6ms)
+Completed 200 OK in 717ms (Views: 680.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users/sign_in" for 98.167.46.192 at 2017-10-31 16:29:52 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IVuPgY4RWTLC+87cVaVUECtxX57lDUXGvTatBALDyliPDLqyUO9rNP+Hu/R3e0Lc7syeEawF8MmJLA8B0e13ew==", "user"=>{"email"=>"skepts@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "skepts@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2017-10-30 19:58:14.446055"], ["current_sign_in_at", "2017-10-31 16:29:52.301039"], ["sign_in_count", 3], ["updated_at", "2017-10-31 16:29:52.302442"], ["id", 1]]
+  [1m[36m (16.6ms)[0m  [1mcommit transaction[0m
+Redirected to https://blocmetrics-rtrunkhill.c9users.io/
+Completed 302 Found in 236ms (ActiveRecord: 17.6ms)
+
+
+Started GET "/" for 98.167.46.192 at 2017-10-31 16:29:52 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/register_app" for 98.167.46.192 at 2017-10-31 16:29:54 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+Processing by RegisterAppController#index as HTML
+  [1m[36mRegisterApp Load (0.3ms)[0m  [1mSELECT "register_apps".* FROM "register_apps"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered register_app/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 42ms (Views: 35.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/events" for 146.148.57.179 at 2017-10-31 16:30:01 +0000
+Cannot render console from 146.148.57.179! Allowed networks: 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+Processing by API::EventsController#create as JSON
+  Parameters: {"name"=>"foobar", "event"=>{"name"=>"foobar"}}
+  [1m[36mRegisterApp Load (0.2ms)[0m  [1mSELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."url" = ? LIMIT 1[0m  [["url", "http://registered_application.com"]]
+Completed 422 Unprocessable Entity in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 98.167.46.192 at 2017-10-31 16:31:03 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 463ms (Views: 451.1ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/api/events" for 146.148.57.179 at 2017-10-31 16:31:11 +0000
+Cannot render console from 146.148.57.179! Allowed networks: 98.167.46.192, 127.0.0.0/127.255.255.255, ::1
+Processing by API::EventsController#create as JSON
+  Parameters: {"name"=>"foobar", "event"=>{"name"=>"foobar"}}
+  [1m[36mRegisterApp Load (0.2ms)[0m  [1mSELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."url" = ? LIMIT 1[0m  [["url", "http://registered_application.com"]]
+Completed 422 Unprocessable Entity in 13ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 98.167.46.192 at 2017-10-31 16:32:13 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.0ms)
+  [1m[35mUser Load (1.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 432ms (Views: 416.4ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/api/events" for 146.148.57.179 at 2017-10-31 16:32:19 +0000
+Cannot render console from 146.148.57.179! Allowed networks: 98.167.46.192, 127.0.0.0/127.255.255.255, ::1
+Processing by API::EventsController#create as JSON
+  Parameters: {"name"=>"foobar", "event"=>{"name"=>"foobar"}}
+  [1m[36mRegisterApp Load (0.3ms)[0m  [1mSELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."url" = ? LIMIT 1[0m  [["url", "http://registered_application.com"]]
+Completed 422 Unprocessable Entity in 19ms (Views: 1.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/register_app" for 98.167.46.192 at 2017-10-31 16:33:10 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 127.0.0.0/127.255.255.255, ::1
+Processing by RegisterAppController#index as HTML
+  [1m[35mRegisterApp Load (0.3ms)[0m  SELECT "register_apps".* FROM "register_apps"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered register_app/index.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 82ms (Views: 80.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/register_app/3" for 98.167.46.192 at 2017-10-31 16:33:11 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 127.0.0.0/127.255.255.255, ::1
+Processing by RegisterAppController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mRegisterApp Load (0.2ms)[0m  SELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."register_app_id" = ?[0m  [["register_app_id", 3]]
+  Rendered register_app/show.html.erb within layouts/application (1.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 62ms (Views: 29.9ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/users/sign_out" for 98.167.46.192 at 2017-10-31 16:33:15 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"crB5Wr2atqkfpBWxa/FtvGQvTcfY8uP3mLNiQsVyGCaFGCEELgSVl1seegJFPnOArCu/NgpjNxbzofAuzwboeg=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://blocmetrics-rtrunkhill.c9users.io/
+Completed 302 Found in 391ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 98.167.46.192 at 2017-10-31 16:33:16 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 127.0.0.0/127.255.255.255, ::1
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 98.167.46.192 at 2017-10-31 16:33:18 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (181.5ms)
+Completed 200 OK in 214ms (Views: 211.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 98.167.46.192 at 2017-10-31 16:33:21 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0yaLm1AoXqjW8Mzq4HpXC8rGAj8UMx4lhXySfqCmVcCbXOFyQYap0UHgRWuowzXWksh82jJvxDnDsbMtLlipJw==", "user"=>{"email"=>"rtrunkhill@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "rtrunkhill@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["current_sign_in_at", "2017-10-31 16:33:21.238731"], ["sign_in_count", 2], ["updated_at", "2017-10-31 16:33:21.239876"], ["id", 2]]
+  [1m[36m (8.8ms)[0m  [1mcommit transaction[0m
+Redirected to https://blocmetrics-rtrunkhill.c9users.io/
+Completed 302 Found in 174ms (ActiveRecord: 9.5ms)
+
+
+Started GET "/" for 98.167.46.192 at 2017-10-31 16:33:21 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 127.0.0.0/127.255.255.255, ::1
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 200 OK in 26ms (Views: 25.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/register_app" for 98.167.46.192 at 2017-10-31 16:33:23 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 127.0.0.0/127.255.255.255, ::1
+Processing by RegisterAppController#index as HTML
+  [1m[36mRegisterApp Load (0.2ms)[0m  [1mSELECT "register_apps".* FROM "register_apps"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered register_app/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/register_app/1" for 98.167.46.192 at 2017-10-31 16:33:24 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 127.0.0.0/127.255.255.255, ::1
+Processing by RegisterAppController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRegisterApp Load (0.2ms)[0m  [1mSELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events" WHERE "events"."register_app_id" = ?  [["register_app_id", 1]]
+  Rendered register_app/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 44ms (Views: 40.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/register_app/2" for 98.167.46.192 at 2017-10-31 16:33:26 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 127.0.0.0/127.255.255.255, ::1
+Processing by RegisterAppController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRegisterApp Load (0.2ms)[0m  SELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."register_app_id" = ?[0m  [["register_app_id", 2]]
+  Rendered register_app/show.html.erb within layouts/application (0.7ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 200 OK in 44ms (Views: 41.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/register_app/4" for 98.167.46.192 at 2017-10-31 16:33:28 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 127.0.0.0/127.255.255.255, ::1
+Processing by RegisterAppController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRegisterApp Load (0.2ms)[0m  [1mSELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" WHERE "events"."register_app_id" = ?  [["register_app_id", 4]]
+  Rendered register_app/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 53ms (Views: 47.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/register_app/5" for 98.167.46.192 at 2017-10-31 16:33:29 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 127.0.0.0/127.255.255.255, ::1
+Processing by RegisterAppController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mRegisterApp Load (0.2ms)[0m  SELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."register_app_id" = ?[0m  [["register_app_id", 5]]
+  Rendered register_app/show.html.erb within layouts/application (0.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 200 OK in 37ms (Views: 33.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/events" for 146.148.57.179 at 2017-10-31 16:34:04 +0000
+Cannot render console from 146.148.57.179! Allowed networks: 98.167.46.192, 127.0.0.0/127.255.255.255, ::1
+Processing by API::EventsController#create as JSON
+  Parameters: {"name"=>"foobar", "event"=>{"name"=>"foobar"}}
+  [1m[36mRegisterApp Load (0.2ms)[0m  [1mSELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."url" = ? LIMIT 1[0m  [["url", "http://registered_application.com"]]
+Completed 422 Unprocessable Entity in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 98.167.46.192 at 2017-10-31 16:36:16 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 200 OK in 463ms (Views: 422.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/register_app" for 98.167.46.192 at 2017-10-31 16:36:20 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+Processing by RegisterAppController#index as HTML
+  [1m[36mRegisterApp Load (0.2ms)[0m  [1mSELECT "register_apps".* FROM "register_apps"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered register_app/index.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 85ms (Views: 73.7ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/events" for 146.148.57.179 at 2017-10-31 16:36:25 +0000
+Cannot render console from 146.148.57.179! Allowed networks: 98.167.46.192, 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+Processing by API::EventsController#create as JSON
+  Parameters: {"name"=>"foobar", "event"=>{"name"=>"foobar"}}
+  [1m[36mRegisterApp Load (0.2ms)[0m  [1mSELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."url" = ? LIMIT 1[0m  [["url", "http://registered_application.com"]]
+Completed 422 Unprocessable Entity in 11ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/register_app/5" for 98.167.46.192 at 2017-10-31 16:46:02 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+Processing by RegisterAppController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mRegisterApp Load (0.3ms)[0m  SELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mEvent Load (0.4ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."register_app_id" = ?[0m  [["register_app_id", 5]]
+  Rendered register_app/show.html.erb within layouts/application (1.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 200 OK in 77ms (Views: 42.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 98.167.46.192 at 2017-10-31 16:48:12 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 200 OK in 412ms (Views: 401.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/register_app" for 98.167.46.192 at 2017-10-31 16:48:14 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+Processing by RegisterAppController#index as HTML
+  [1m[36mRegisterApp Load (0.2ms)[0m  [1mSELECT "register_apps".* FROM "register_apps"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered register_app/index.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 92ms (Views: 81.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/register_app/5" for 98.167.46.192 at 2017-10-31 16:48:16 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+Processing by RegisterAppController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mRegisterApp Load (0.2ms)[0m  [1mSELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events" WHERE "events"."register_app_id" = ?  [["register_app_id", 5]]
+  Rendered register_app/show.html.erb within layouts/application (1.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 65ms (Views: 34.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/register_app/4" for 98.167.46.192 at 2017-10-31 16:48:18 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+Processing by RegisterAppController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mRegisterApp Load (0.2ms)[0m  SELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."register_app_id" = ?[0m  [["register_app_id", 4]]
+  Rendered register_app/show.html.erb within layouts/application (0.7ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 200 OK in 51ms (Views: 46.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/register_app/2" for 98.167.46.192 at 2017-10-31 16:48:19 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+Processing by RegisterAppController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRegisterApp Load (0.2ms)[0m  [1mSELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events" WHERE "events"."register_app_id" = ?  [["register_app_id", 2]]
+  Rendered register_app/show.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 34ms (Views: 31.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/register_app/1" for 98.167.46.192 at 2017-10-31 16:48:21 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+Processing by RegisterAppController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRegisterApp Load (0.1ms)[0m  SELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."register_app_id" = ?[0m  [["register_app_id", 1]]
+  Rendered register_app/show.html.erb within layouts/application (0.8ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 200 OK in 40ms (Views: 37.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/events" for 146.148.57.179 at 2017-10-31 16:48:40 +0000
+Cannot render console from 146.148.57.179! Allowed networks: 98.167.46.192, 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+Processing by API::EventsController#create as JSON
+  Parameters: {"name"=>"foobar", "event"=>{"name"=>"foobar"}}
+  [1m[36mRegisterApp Load (0.4ms)[0m  [1mSELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."url" = ? LIMIT 1[0m  [["url", "http://registered_application.com"]]
+Completed 422 Unprocessable Entity in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 98.167.46.192 at 2017-10-31 16:53:25 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 200 OK in 432ms (Views: 421.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/register_app" for 98.167.46.192 at 2017-10-31 16:53:28 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+Processing by RegisterAppController#index as HTML
+  [1m[36mRegisterApp Load (0.2ms)[0m  [1mSELECT "register_apps".* FROM "register_apps"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered register_app/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 86ms (Views: 76.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/events" for 146.148.57.179 at 2017-10-31 16:53:36 +0000
+Cannot render console from 146.148.57.179! Allowed networks: 98.167.46.192, 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+Processing by API::EventsController#create as JSON
+  Parameters: {"name"=>"foobar", "event"=>{"name"=>"foobar"}}
+  [1m[36mRegisterApp Load (0.3ms)[0m  [1mSELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."url" = ? LIMIT 1[0m  [["url", "http://registered_application.com"]]
+Completed 422 Unprocessable Entity in 39ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/register_app/5" for 98.167.46.192 at 2017-10-31 17:50:57 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+Processing by RegisterAppController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mRegisterApp Load (0.8ms)[0m  SELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."register_app_id" = ?[0m  [["register_app_id", 5]]
+  Rendered register_app/show.html.erb within layouts/application (1.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 200 OK in 116ms (Views: 62.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 98.167.46.192 at 2017-10-31 17:51:04 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/register_app" for 98.167.46.192 at 2017-10-31 17:51:05 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+Processing by RegisterAppController#index as HTML
+  [1m[35mRegisterApp Load (0.4ms)[0m  SELECT "register_apps".* FROM "register_apps"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered register_app/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 32ms (Views: 30.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/register_app/new" for 98.167.46.192 at 2017-10-31 17:51:07 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+Processing by RegisterAppController#new as HTML
+  Rendered register_app/new.html.erb within layouts/application (619.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 200 OK in 650ms (Views: 649.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/register_app" for 98.167.46.192 at 2017-10-31 17:51:30 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+Processing by RegisterAppController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N2p5gj2vLX7cc/tG2yxsncpHcMDpye1Glk2B+MwUk+PWBxrOVU7A8Eoir3qhkUnH6zZvZfFKBrnLza5J62tQ4A==", "register_app"=>{"name"=>"Testing API", "url"=>"registered_application.com"}, "commit"=>"Save"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "register_apps" ("name", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Testing API"], ["url", "registered_application.com"], ["user_id", 2], ["created_at", "2017-10-31 17:51:30.687322"], ["updated_at", "2017-10-31 17:51:30.687322"]]
+  [1m[35m (10.1ms)[0m  commit transaction
+Redirected to https://blocmetrics-rtrunkhill.c9users.io/register_app/6
+Completed 302 Found in 17ms (ActiveRecord: 10.6ms)
+
+
+Started GET "/register_app/6" for 98.167.46.192 at 2017-10-31 17:51:30 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+Processing by RegisterAppController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRegisterApp Load (0.2ms)[0m  [1mSELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events" WHERE "events"."register_app_id" = ?  [["register_app_id", 6]]
+  Rendered register_app/show.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 29ms (Views: 26.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/events" for 146.148.57.179 at 2017-10-31 17:51:39 +0000
+Cannot render console from 146.148.57.179! Allowed networks: 98.167.46.192, 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+Processing by API::EventsController#create as JSON
+  Parameters: {"name"=>"foobar", "event"=>{"name"=>"foobar"}}
+  [1m[35mRegisterApp Load (0.1ms)[0m  SELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."url" = ? LIMIT 1  [["url", "http://registered_application.com"]]
+Completed 422 Unprocessable Entity in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/register_app/6/edit" for 98.167.46.192 at 2017-10-31 17:51:55 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+Processing by RegisterAppController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRegisterApp Load (0.2ms)[0m  [1mSELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered register_app/edit.html.erb within layouts/application (2.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 200 OK in 42ms (Views: 40.1ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/register_app/6" for 98.167.46.192 at 2017-10-31 17:52:09 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+Processing by RegisterAppController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uqpBYSNOJyGnY5ia1akekKPb9kFY4gm3sApTWR4oIupbxyItS6/KrzEyzKavFDvKgqrp5EBh4kjtinzoOVfh6Q==", "register_app"=>{"name"=>"Testing API", "url"=>"http://registered_application.com"}, "commit"=>"Save", "id"=>"6"}
+  [1m[36mRegisterApp Load (0.1ms)[0m  [1mSELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "register_apps" SET "url" = ?, "updated_at" = ? WHERE "register_apps"."id" = ?[0m  [["url", "http://registered_application.com"], ["updated_at", "2017-10-31 17:52:09.089322"], ["id", 6]]
+  [1m[35m (9.2ms)[0m  commit transaction
+Redirected to https://blocmetrics-rtrunkhill.c9users.io/register_app/6
+Completed 302 Found in 14ms (ActiveRecord: 9.6ms)
+
+
+Started GET "/register_app/6" for 98.167.46.192 at 2017-10-31 17:52:09 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+Processing by RegisterAppController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRegisterApp Load (0.1ms)[0m  [1mSELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events" WHERE "events"."register_app_id" = ?  [["register_app_id", 6]]
+  Rendered register_app/show.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 83ms (Views: 81.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/events" for 146.148.57.179 at 2017-10-31 17:52:15 +0000
+Cannot render console from 146.148.57.179! Allowed networks: 98.167.46.192, 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+Processing by API::EventsController#create as JSON
+  Parameters: {"name"=>"foobar", "event"=>{"name"=>"foobar"}}
+  [1m[35mRegisterApp Load (0.2ms)[0m  SELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."url" = ? LIMIT 1  [["url", "http://registered_application.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "events" ("name", "register_app_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "foobar"], ["register_app_id", 6], ["created_at", "2017-10-31 17:52:15.921830"], ["updated_at", "2017-10-31 17:52:15.921830"]]
+  [1m[36m (145.0ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 151ms (Views: 0.6ms | ActiveRecord: 146.0ms)
+
+
+Started GET "/register_app" for 98.167.46.192 at 2017-10-31 17:52:23 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+Processing by RegisterAppController#index as HTML
+  [1m[35mRegisterApp Load (0.2ms)[0m  SELECT "register_apps".* FROM "register_apps"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered register_app/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/register_app/6" for 98.167.46.192 at 2017-10-31 17:52:24 +0000
+Cannot render console from 98.167.46.192! Allowed networks: 98.167.46.192, 146.148.57.179, 127.0.0.0/127.255.255.255, ::1
+Processing by RegisterAppController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mRegisterApp Load (0.1ms)[0m  SELECT  "register_apps".* FROM "register_apps" WHERE "register_apps"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."register_app_id" = ?[0m  [["register_app_id", 6]]
+  Rendered register_app/show.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 200 OK in 34ms (Views: 31.2ms | ActiveRecord: 0.4ms)
